@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": "1c20",
+      "title": "Mr shinde",
+      "body": "I am doing 5th lesson of 2nd leture. yaayyyyy!!!!!",
+      "author": "martin"
+    },
+    {
+      "id": "2e53",
+      "title": "ms kaur",
+      "body": "i am about to finish my website!",
+      "author": "navneet"
+    },
+    {
+      "id": "5241",
+      "title": "i am done",
+      "body": "so finally done with my blog. now have to start a new project ://///",
+      "author": "navneet"
+    },
+    {
+      "id": "8059",
+      "title": "How to  make a Dockerfile",
+      "body": "FROM python:3.12\nWORKDIR /usr/local/app\n\n# Install the application dependencies\nCOPY requirements.txt ./\nRUN pip install --no-cache-dir -r requirements.txt\n\n# Copy in the source code\nCOPY src ./src\nEXPOSE 5000\n\n# Setup an app user so the container doesn't run as the root user\nRUN useradd app\nUSER app\n\nCMD [\"uvicorn\", \"app.main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8080\"]\n\n\nCommon instructions\nSome of the most common instructions in a Dockerfile include:\n\nFROM <image> - this specifies the base image that the build will extend.\nWORKDIR <path> - this instruction specifies the \"working directory\" or the path in the image where files will be copied and commands will be executed.\nCOPY <host-path> <image-path> - this instruction tells the builder to copy files from the host and put them into the container image.\nRUN <command> - this instruction tells the builder to run the specified command.\nENV <name> <value> - this instruction sets an environment variable that a running container will use.\nEXPOSE <port-number> - this instruction sets configuration on the image that indicates a port the image would like to expose.\nUSER <user-or-uid> - this instruction sets the default user for all subsequent instructions.\nCMD [\"<command>\", \"<arg1>\"] - this instruction sets the default command a container using this image will run.",
+      "author": "amey"
+    }
+  ]
+}
